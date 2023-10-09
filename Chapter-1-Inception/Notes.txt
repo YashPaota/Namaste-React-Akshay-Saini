@@ -1,0 +1,15 @@
+1. Emmets :- So basically , emmets are free add on feature for the text editors such as VS Code.It allows us to type
+             shortcuts inside the code which are then expanded into full pieces of code. By using emmets developers types less
+             which saves their time and keystrokes.By relying on emmets auto completion means fewer typos and more 
+             robust and valid files.
+
+2.CDN :- SO basicall a CDN(COntent delivery Network ) is a group of geographically distributed servers that speeds up the delivery
+         of the Web content by bringing it closer to here users are.CDN services were created to solve the problem of network congestion caused by delivering 
+         rich web content, such as graphics and video over the internet — much like a traffic jam. Getting content from centrally located servers to individual 
+         users simply took too long. CDNs have now grown to include everything from text, graphics, scripts, and media files to software downloads, documents, 
+         portals, ecommerce, live streaming media, on-demand video streaming media, and social media sites.
+
+
+3. Why React is Known as React? :- React is JavaScript library developed by Facebook to help developers build user Iterfaces which are fast , Reactive and Responsive.
+                                   It is called as Recat because of its core ability to react or respond dynamicaaly to changes in data.
+      
