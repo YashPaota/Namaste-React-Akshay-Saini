@@ -1,0 +1,3 @@
+1. NPM :- NPM is basically a Package Manager.It's full form is not Node Package Manager.But behind the scenes it acts as
+          Node Package Manager.It is the standard warehouse/Repositry for all the packages, libraries,dependencies around the world.
+          It is the biggest Package Manager and all the packages,libraries,dependencies comes from NPM.  
