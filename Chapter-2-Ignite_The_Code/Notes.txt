@@ -1,3 +1,9 @@
 1. NPM :- NPM is basically a Package Manager.It's full form is not Node Package Manager.But behind the scenes it acts as
           Node Package Manager.It is the standard warehouse/Repositry for all the packages, libraries,dependencies around the world.
           It is the biggest Package Manager and all the packages,libraries,dependencies comes from NPM.  
+
+2. Parcel/WebPack(Bundlers) :- So the most important package in our code is parcel/webpack and they are called as bundlers.They are important as our code 
+                               needs to be bundled , optimized , cached , cleaned and minified before sending it to the production and all these things are 
+                               done by the bundlerS(Parcel/Webpack).Here in our project we will be using Parcel because Parcel is a BEAST.
+
+3.
