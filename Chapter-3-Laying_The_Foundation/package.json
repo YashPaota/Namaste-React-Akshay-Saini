@@ -1,0 +1,24 @@
+{
+  "name": "chapter-3-laying_the_foundation",
+  "version": "1.0.0",
+  "description": "LAying The Foundation",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [
+    "React",
+    "JavaScript",
+    "JSX",
+    "JS"
+  ],
+  "author": "Yash Paota",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
