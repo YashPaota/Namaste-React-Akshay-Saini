@@ -1,8 +1,19 @@
 import { LOGO_URL } from "../utils/constants";
-import { useState } from "react";
-const Header = () => {
+import { useState, useEffect } from "react";
+// import { Link } from "react-router-dom";
 
-    const[btnNameReact , setBtnNameReact] = useState("Login")
+
+const Header = () => {
+    
+    const[btnNameReact , setBtnNameReact] = useState("Login");
+    console.log("Header rendered")
+
+    useEffect(() => {
+        console.log(" useEffectCalled");
+    },[btnNameReact]);
+    
+
+    
     return(
         <div className="header">
             <div className="logo-container">
@@ -11,8 +22,12 @@ const Header = () => {
             <div className="nav-items">
                 <ul>
                     <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact</li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                         Contact Us
+                    </li>
                     <li>Cart</li>
                     <button className="login" onClick={() => 
                        {
