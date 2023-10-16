@@ -54,7 +54,7 @@ const fetchData = async() => {
                    const filteredList = listOfRestaurants.filter(
                              (res) => res.info.avgRating > 4.2
                              );
-                      setListOfRestaurants(filteredList)
+                      setFilteredRestaurant(filteredList)
                       }}>
                    Top Rated Restaurants
                 </button>
@@ -62,7 +62,7 @@ const fetchData = async() => {
            <div className="res-container">
               
               {
-              filteredRestaurant.map((restaurant) => <RestaurantCard key={restaurant.info.id}resData = {restaurant} />)
+              filteredRestaurant.map((restaurant) => <RestaurantCard key={restaurant.info.id} resData = {restaurant} />)
               }
               
               
