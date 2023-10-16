@@ -2,7 +2,6 @@
   "name": "code",
   "version": "1.0.0",
   "description": "Talk is cheap, Show me the code",
-  
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
@@ -21,6 +20,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0"
   }
 }
