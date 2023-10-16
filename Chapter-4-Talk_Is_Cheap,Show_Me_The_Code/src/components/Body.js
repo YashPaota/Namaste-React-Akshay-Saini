@@ -5,7 +5,11 @@ import Shimmer from "./Shimmer";
 
 
 const Body = () => {
-const[listOfRestaurants , setListOfRestaurants] = useState([]);
+const[listOfRestaurants , setListOfRestaurants] = useState([]); //Never Modifying the original list of restaurants
+const[searchText , setSearchText] = useState("");
+const[filteredRestaurant , setFilteredRestaurant] = useState([]); //Created a new variable for filtered list insted of modifying the original.
+console.log("Body rendered");
+
 useEffect(() => {
       fetchData();
           } , []);
@@ -16,6 +20,7 @@ const fetchData = async() => {
      console.log(json);
      //optional chaining
      setListOfRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+     setFilteredRestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
 }          
    //Conditional rendering
    // if(listOfRestaurants.length === 0)
@@ -28,6 +33,21 @@ const fetchData = async() => {
    return listOfRestaurants.length === 0 ? <Shimmer /> : (
         <div className="body">
            <div className="filter">
+           <div className="search">
+             <input type="text" className="search-box" value={searchText} onChange={(e) => setSearchText(e.target.value)} />
+             <button 
+                  onClick={() => { 
+                    console.log(searchText);
+                    const filteredRestaurants =  listOfRestaurants.filter(
+                     (res) => res.info.name.toLowerCase().includes(searchText.toLowerCase())
+                              
+                    );
+                    console.log(filteredRestaurants);
+                    setFilteredRestaurant(filteredRestaurants);
+
+
+                  }}>Search</button>
+           </div>
               <button 
                 className="filter-btn" 
                 onClick={() =>{
@@ -42,7 +62,7 @@ const fetchData = async() => {
            <div className="res-container">
               
               {
-              listOfRestaurants.map((restaurant) => <RestaurantCard key={restaurant.info.id}resData = {restaurant} />)
+              filteredRestaurant.map((restaurant) => <RestaurantCard key={restaurant.info.id}resData = {restaurant} />)
               }
               
               
