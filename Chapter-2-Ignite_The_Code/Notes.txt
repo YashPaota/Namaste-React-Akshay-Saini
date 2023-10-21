@@ -3,7 +3,50 @@
           It is the biggest Package Manager and all the packages,libraries,dependencies comes from NPM.  
 
 2. Parcel/WebPack(Bundlers) :- So the most important package in our code is parcel/webpack and they are called as bundlers.They are important as our code 
-                               needs to be bundled , optimized , cached , cleaned and minified before sending it to the production and all these things are 
-                               done by the bundlerS(Parcel/Webpack).Here in our project we will be using Parcel because Parcel is a BEAST.
+                               needs to be bundled , optimized , cached , cleaned , compressed and minified before sending it to the production and all these things are 
+                               done by the bundlerS(Parcel/Webpack).Here in our project we will be using Parcel because Parcel is a BEAST. There are many other
+                               features of the parcel.
 
-3.
+3..parcel-cache :- So as we know that parcel is doing lot of things to make our app faster. One of those things is caching. Parcel is doing caching in the
+                   .parcel-cache folder.Parcel is taking litttle space in our memory and is doing caching. Beacause og this caching everytime we build our app
+                   it takes very less time .Faster build bacause of caching.
+
+4.npx :- So basically for installing any package/library/dependency we are using npm, and to execute any package/dependency we use npx.It is basically used forexecution
+         process.
+
+5.dependencies and devDependencies :- So as we already know that our project/App is dependent upon lots of libraries/packages, these are only called as dependencies.
+                                      There are sonme dependencies which are required at the time of development only and these are called as devDependencies.
+                                      for installing dependencies as devDependencies we need to do it like (npm install -D parcel).
+                                      whereas normal dependencies are required both at the time of development and production environment.
+
+6.Tree Shaking :- Tree shaking is basically a mechanism which works both for Common JavaScript and Modules.This is basically a feature of parcel.
+                  So basically arcel analyzes all the imports and exports and it basically removes all the unwanted code and code which is of no use.
+
+7. Hot Module Replacement :- It is also called as Hot Reloading. So basicaaly when we change or update something in our code. Parcel Updates it 
+                             in the UI without even reloading the page. No unnecessary reloading/refresshing.
+
+8.5 parcel superpowers :- (a) Builds the devlopment build of our project and created a server to host it at localhost:1234.
+                          (b) Hot Module Replacement
+                          (c) Parcel is caching it in .parcel-cacheand because of the caching we get faster builds.
+                          (d) File Watching Algorithm.
+                          (e) Tree Shaking , Differential Bundeling , Error Handeling , Image Optimization , Browserslist
+
+9. .gitignore :- .gitignore is a file inside our project structure. Basically it spefiy that to git that it should not be commited to the git repository. 
+                  The content of the .gitignore will also not go inside the repository.It basically conatins those files which we dont want to put
+                  on the remote repository.
+                  We should not put package.json and package.lock.json in the gitignore because they contains the info about our project,
+                  dependencies/libraries which are present in our project scripts used in project.
+
+                  We can put node_modules , dist , .package_cache in the .gitignore because they are heavy in size and they should not be put up in git repository.
+                  They can be regenerated again.
+
+
+10.Package.jason vs package.lock.json :- Package.json is basically configuration of npm. It basically contains information about our project.
+                                         It is basically a json data. It contains details about what dependencies we are using / what libraries we are using / what scripts are present 
+                                         what devDependencies we are using in our app.It locks dependencies in form of (^ and ~) so that if any minor ,
+                                         major or patch update is there it can update on its own.
+                                         
+                                         Whereas Package.lock.json locks the exact version of the dependencies and llibraries our app is using.
+                                         it contains the info about all the transitive dependencies as well.
+                                         Its main purpose is to insure that same dependencies are installed in the development mode and production
+                                         environment.           
