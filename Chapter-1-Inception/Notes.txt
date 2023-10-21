@@ -8,10 +8,25 @@
          rich web content, such as graphics and video over the internet — much like a traffic jam. Getting content from centrally located servers to individual 
          users simply took too long. CDNs have now grown to include everything from text, graphics, scripts, and media files to software downloads, documents, 
          portals, ecommerce, live streaming media, on-demand video streaming media, and social media sites.
+         We can also say that this is the place where react is hosted & React code is present. To use react into our project we need to fetch this by using script tag via CDN links.
+         If we go to this links in the web we can see the react code. Do try it once.
 
 
 3. Why React is Known as React? :- React is JavaScript library developed by Facebook to help developers build user Iterfaces which are fast , Reactive and Responsive.
                                    It is called as Recat because of its core ability to react or respond dynamicaaly to changes in data.
 
-4.
+4.Cross-origin :- Crossorigin attribute in script tag basically sets the mode of the request to HTTP CORS.
+                  CORS is cross origin resource sharing mechanism which allows webpages to make an HTTP request to load resources o other servers.
+                  It defines a way how browsers and servers can interact with eachother to determine if it is safe to allow Cross origin request.
+                  CORS allows the servers to specify who can access the assets amongs the many things.
+                  
+
+5.React & ReactDOM :- Reactis basically is JavaSCript library used to create user interfaces. React is used to create elements.Where as the reactdom is an additional library
+                      given to us which basically helps in putting the react element into the DOM.Whenever there is an DOM manipulation in React it is done with
+                      react-dom.
+
+6. React.development.js & React.production.js :-
+
+
+7.Library & Framework :-
       
