@@ -49,4 +49,15 @@
                                          Whereas Package.lock.json locks the exact version of the dependencies and llibraries our app is using.
                                          it contains the info about all the transitive dependencies as well.
                                          Its main purpose is to insure that same dependencies are installed in the development mode and production
-                                         environment.           
+                                         environment.       
+11. Package.lock.json :- We should not modify out package.lock.json because it contains the exact information about our project. Details about the exact versions of dependencies and transitive dependencies.
+                         If we try to manipulate the this file then there may come some inconsistency in our development code and production 
+                         environment.
+
+12.node_modules :- node_modles basically contains all the code of the dependencies/libraries/packages which we have installed in our project.
+                   It basically acts as the database for the code of dependencies.
+                   We should not put this folder in git because it is way heavy in size and also if we have package.json then it can be generated
+                   again.
+
+13.dist :-  Dist is the folder which basicallly has the development build and the production build of our code. The  UI which we see on screen comes
+            from this folder and not from the respective files.See dist folder once you will find the compressed files.        
