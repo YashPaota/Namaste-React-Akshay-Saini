@@ -3,6 +3,7 @@ import { useState , useEffect} from "react";
 import Shimmer from "./Shimmer";
 // import resList from "../utils/mockData";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 const Body = () => {
@@ -30,6 +31,15 @@ const fetchData = async() => {
       
    //    return <Shimmer />
    // }
+
+   const onlineStatus = useOnlineStatus();
+   
+   if(onlineStatus === false)
+     return(
+        <h1>
+           Looks Like you are offline!!! Please Check your Internet Connection..
+         </h1>
+      );
 
    //using ternary operator
    return listOfRestaurants.length === 0 ? <Shimmer /> : (
