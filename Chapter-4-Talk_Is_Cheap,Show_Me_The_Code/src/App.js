@@ -8,6 +8,7 @@ import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { lazy , Suspense } from "react";
 import {createBrowserRouter , RouterProvider , Outlet} from "react-router-dom";
+import Footer from "./components/Footer";
 
 
 const AppLayout = () => {
@@ -15,6 +16,7 @@ const AppLayout = () => {
         <div className="app">
             <Header />
             <Outlet />
+            <Footer />
         </div>
     )
 }
