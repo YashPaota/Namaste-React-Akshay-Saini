@@ -5,7 +5,7 @@ const RestaurantCard = (props) => {
     const { resData} = props;
     const{name , cuisines , avgRating , sla , cloudinaryImageId , costForTwo} = resData?.info;
     return(
-        <div className="m-4 p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-200" /*style={{backgroundColor:"#f0f0f0"}}*/>
+        <div className="m-8  p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-200" /*style={{backgroundColor:"#f0f0f0"}}*/>
         <img 
           alt="Image"
           src={CDN_URL + cloudinaryImageId}
