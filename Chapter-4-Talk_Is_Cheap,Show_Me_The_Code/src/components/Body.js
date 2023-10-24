@@ -51,12 +51,13 @@ const Body = () => {
         <div className="m-4 p-4">
           <input
             type="text"
-            className="border border-r-2 border-solid border-black"
+            placeholder="Enter Restaurant"
+            className="border border-r-2 border-solid border-black outline-none"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
           <button
-            className="bg-green-300 px-4 m-4 py-2 rounded-lg"
+            className="bg-orange-600 hover:bg-orange-700 focus:ring-4 font-medium px-8 m-4 py-2 rounded-lg text-white shadow-2xl "
             onClick={() => {
               console.log(searchText);
               const filteredRestaurants = listOfRestaurants.filter((res) =>
@@ -72,7 +73,7 @@ const Body = () => {
 
         <div className="m-4 p-4 flex items-center">
           <button
-            className="bg-green-300 px-4 py-2 rounded-lg"
+            className="bg-orange-600 hover:bg-orange-700 text-white font-medium focus:ring-4 px-4 py-2 rounded-lg"
             onClick={() => {
               const filteredList = listOfRestaurants.filter(
                 (res) => res.info.avgRating > 4.2
