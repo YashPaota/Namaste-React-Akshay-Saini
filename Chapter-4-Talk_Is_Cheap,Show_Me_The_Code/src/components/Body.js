@@ -9,7 +9,7 @@ const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]); //Never Modifying the original list of restaurants
   const [searchText, setSearchText] = useState("");
   const [filteredRestaurant, setFilteredRestaurant] = useState([]); //Created a new variable for filtered list insted of modifying the original.
-  console.log("Body rendered", listOfRestaurants);
+//   console.log("Body rendered", listOfRestaurants);
 
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
