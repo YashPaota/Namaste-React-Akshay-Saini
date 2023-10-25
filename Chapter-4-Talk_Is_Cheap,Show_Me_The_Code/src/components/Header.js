@@ -1,6 +1,7 @@
 import { LOGO_URL } from "../utils/constants";
 // import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import QuickFoodNew from "../utils/QuickFoodNew.jpg";
 // import useOnlineStatus from "../utils/useOnlineStatus";
 
 
@@ -19,9 +20,9 @@ const Header = () => {
     
     return(
         <div className=" h-24 flex justify-between shadow-xl mb-2 sm:bg-yellow-50 lg:bg-white">
-            <div className="w-36 ">
+            <div className="w-44 ml-12 ">
               <Link to="/">
-                <img className="h-20" src= {LOGO_URL}/>
+                <img src = {QuickFoodNew} className="h-24"/>
               </Link>
             </div>
             <div className="flex items-center">
