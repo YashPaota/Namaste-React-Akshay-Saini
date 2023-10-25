@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, {withPromotedLabel} from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 // import resList from "../utils/mockData";
@@ -9,7 +9,9 @@ const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]); //Never Modifying the original list of restaurants
   const [searchText, setSearchText] = useState("");
   const [filteredRestaurant, setFilteredRestaurant] = useState([]); //Created a new variable for filtered list insted of modifying the original.
-  console.log("Body rendered");
+  console.log("Body rendered", listOfRestaurants);
+
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
   useEffect(() => {
     fetchData();
@@ -93,7 +95,9 @@ const Body = () => {
             key={restaurant.info.id}
             to={"/restaurants/" + restaurant.info.id}
           >
-            <RestaurantCard resData={restaurant} />
+          {/* If the restaurant is promoted Then add a promoted label to it. */}
+          {restaurant.info.avgRating >= 4.5 ? <RestaurantCardPromoted resData={restaurant} /> :  <RestaurantCard resData={restaurant} /> } 
+           
           </Link>
         ))}
       </div>
