@@ -1,8 +1,17 @@
 // import { CDN_URL } from "../utils/constants";
 
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
+
 const ItemList = (props) => {
   const { items } = props;
-//   console.log(items);
+  const dispatch = useDispatch();
+
+
+ const handleAddItem = (item) => {
+  dispatch(addItem(item));
+
+ }
   return (
     <div>
       {items.map((item) => (
@@ -24,7 +33,7 @@ const ItemList = (props) => {
 
           <div className="w-3/12 p-4">
             <div className="absolute">
-                <button className="bg-black text-white mx-9 mt-16 font-light px-1 rounded-md shadow-lg">Add + </button>
+                <button className="bg-black text-white mx-9 mt-16 font-light px-1 rounded-md shadow-lg" onClick={() => handleAddItem(item)}>Add + </button>
             </div>
             <img src={ "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + item.card.info.imageId} className="w-full" />
           </div>
