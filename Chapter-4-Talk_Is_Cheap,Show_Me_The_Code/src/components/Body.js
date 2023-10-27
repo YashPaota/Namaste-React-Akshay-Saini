@@ -87,7 +87,7 @@ const Body = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-between">
         {/* Key should be given to the parent element */}
 
         {filteredRestaurant.map((restaurant) => (
