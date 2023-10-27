@@ -2,6 +2,8 @@ import { LOGO_URL } from "../utils/constants";
 // import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import QuickFoodNew from "../utils/QuickFoodNew.jpg";
+import { useContext } from "react";
+import UserContext from "../utils/UserContext";
 // import useOnlineStatus from "../utils/useOnlineStatus";
 
 
@@ -15,6 +17,8 @@ const Header = () => {
     // useEffect(() => {
     //     console.log(" useEffectCalled");
     // },[btnNameReact]);
+
+    const {loggedIn} = useContext(UserContext);
     
 
     
@@ -51,6 +55,9 @@ const Header = () => {
                         }}>
                     {btnNameReact}
                     </button> */}
+
+                    <li className="px-4  hover:text-orange-700 transition-all duration-300 ease-in-out text-lg font-bold ">{loggedIn}</li>
+
                 </ul>
             </div>
         </div>
