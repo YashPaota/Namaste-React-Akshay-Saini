@@ -20,7 +20,7 @@ const Body = () => {
   const fetchData = async () => {
     //   const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
     const data = await fetch(
-      "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
    //  console.log(json);
@@ -49,17 +49,17 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <div className="flex justify-center">
-        <div className="m-4 p-4">
+      <div className="mx-10 flex justify-between items-center">
+        <div className="m-4 pt-4">
           <input
             type="text"
             placeholder="Enter Restaurant"
-            className="border border-r-2 border-solid border-black outline-none"
+            className="border border-r-2 border-solid border-black outline-none rounded-md placeholder:px-2 h-8 w-[500px]"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
           <button
-            className="bg-orange-600 hover:bg-orange-700 focus:ring-4 font-medium px-8 m-4 py-2 rounded-lg text-white shadow-2xl "
+            className="bg-orange-600 hover:bg-orange-700 focus:ring-4 font-medium px-4 ml-2 py-1 rounded-lg text-white shadow-2xl "
             onClick={() => {
               console.log(searchText);
               const filteredRestaurants = listOfRestaurants.filter((res) =>
@@ -72,10 +72,9 @@ const Body = () => {
             Search
           </button>
         </div>
-
-        <div className="m-4 p-4 flex items-center">
+        <div>
           <button
-            className="bg-orange-600 hover:bg-orange-700 text-white font-medium focus:ring-4 px-4 py-2 rounded-lg"
+            className="flex px-2 py-1 bg-orange-600 hover:bg-orange-700 text-white font-medium focus:ring-4 rounded-lg "
             onClick={() => {
               const filteredList = listOfRestaurants.filter(
                 (res) => res.info.avgRating > 4.2
@@ -87,7 +86,7 @@ const Body = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-wrap justify-between">
+      <div className="flex flex-wrap justify-between mx-10">
         {/* Key should be given to the parent element */}
 
         {filteredRestaurant.map((restaurant) => (
