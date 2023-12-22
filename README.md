@@ -3,7 +3,7 @@ Created a dynamic food ordering app using ReactJS and TailwindCSS, enriched with
 seamless ordering and engaging user experiences.
 
 ## Live Link
-https://quickfoodorder.netlify.app/
+QuickFood :- https://quickfoodorder.netlify.app/
 
 ## Setup and Running the Application
 To set up and run this application, please follow these steps:
@@ -20,3 +20,6 @@ To set up and run this application, please follow these steps:
 * Tailwind CSS for Styling
 * Implemented Parcel for efficient bundling
 * Optimization Techniques like Lazy Loading , Higher Order Components , Custom Hooks.
+
+### Important
+* The code for the project QuickFood can be found inside the chapter 4 Talk_Is_Cheap_Show_Me_The_Code.
