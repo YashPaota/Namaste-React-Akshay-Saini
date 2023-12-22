@@ -1,21 +1,21 @@
 const Shimmer = () => {
-    return <div className="shimmer-container flex flex-wrap">
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
-             <div className="w-[200px] h-[400px] bg-gray-200 m-5"></div>
+    return <div className="flex flex-wrap justify-between mx-10">
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
+             <div className="m-4 min-h-[320px] w-[250px] shadow-lg hover:shadow-2xl rounded-lg bg-gray-200 "></div>
              
             </div>
 }
